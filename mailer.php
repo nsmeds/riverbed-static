@@ -16,14 +16,14 @@
             exit;
         }
 
+        $from_add = "admin@riverbedpoetry.com"; 
+
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
         $recipient = "niilosmeds@gmail.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
-      
-        $from = "riverbed@riverbed.com";
 
         // Build the email content.
         $email_content = "Name: $name\n";
@@ -31,10 +31,13 @@
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
-
+        $headers = "From: $from_add \r\n";
+        $headers .= "Reply-To: $from_add \r\n";
+        $headers .= "Return-Path: $from_add\r\n";
+        $headers .= "X-Mailer: PHP \r\n";
+      
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($recipient, $subject, $email_content, $headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";
