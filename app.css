@@ -72,12 +72,12 @@ blockquote {
 
 /**** Nav/Menu Styles ****/
 
-.nav,
+nav,
 #issue-desc {
   text-transform: uppercase;
 }
 
-.nav,
+nav,
 #issue-desc {
   display: flex;
   flex-direction: column;
@@ -123,10 +123,6 @@ nav ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 90vw;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 nav ul li {
@@ -338,11 +334,11 @@ footer {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   
   #issue-desc {
-    background-image: url(../images/kingsdark.jpeg);
+    background-image: url(/img/kingsdark.jpeg);
   }
 
   .menu-item {
-    background-image: url(../images/canoedark.jpg);
+    background-image: url(/img/canoedark.jpg);
   }
   
   .form .button {
