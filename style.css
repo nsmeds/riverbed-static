@@ -60,7 +60,7 @@ nav,
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(kings.jpeg);
+  background-image: url(img/kings.jpeg);
   background-color: hsla(40,10%,50%,0.5);
   background-blend-mode: color-burn;
   height: 75vh;

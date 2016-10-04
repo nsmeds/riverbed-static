@@ -1,0 +1,358 @@
+/**** Base Styles ****/
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: hsl(40,10%,20%);
+  margin: 0;
+  text-align: center;
+}
+
+body,
+#main {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+
+h1,
+h2,
+h4,
+figure {
+  font-weight: 300;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  margin-bottom: 0;
+  margin-top: 0.3em;
+  letter-spacing: 0.5em;
+  padding: 0 0 0 0.5em;
+}
+
+h4 {
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a:active {
+  opacity: 0.3;
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: right;
+  margin-right: 60px;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+/**** Nav/Menu Styles ****/
+
+.nav,
+#issue-desc {
+  text-transform: uppercase;
+}
+
+.nav,
+#issue-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  max-width: 967px;
+  margin: 0 auto;
+}
+
+#nav-menu-ul {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+#nav-menu-ul li {
+  padding: 0.5em 1em;
+}
+
+#issue-desc {
+  margin: 0.5em auto 2em auto;
+  background-image: url(/img/kings.jpeg);
+  background-color: hsla(40,10%,50%,0.5);
+  background-blend-mode: color-burn;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  flex-basis: 1;
+}
+
+#issue-desc span {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.li-hide {
+  display: none; /* Hiding until there is content to link to. */
+}
+
+#contributors {
+  display: flex;
+  flex-basis: 1;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+#contributors li {
+  padding: 1em 1em;
+}
+
+/**** Main Content Styles ****/
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#main-content a {
+  color: hsl(200,50%,50%)
+}
+
+.item {
+  text-align: left;
+  max-width: 600px;
+  padding: 5% 5%;
+  border-top: 1px solid #ccc;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+.item h3 {
+  margin: 0 auto 0.2em auto;
+  font-weight: 400;
+}
+
+.item h5 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bio {
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 300;
+  max-width: 60%;
+  margin-bottom: 0.2em;
+}
+
+.item:last-of-type {
+  min-height: 78vh;
+}
+
+.scrollToTop {
+  display: none;
+  position: fixed;
+  right: 50%;
+  bottom: 32px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+/**** Menu-Item Styles ****/
+
+.menu-item {
+  color: #fff;
+  height: 70vh;
+  max-width: 600px;
+  padding: 0 2em 4em 2em;
+  margin: 0.5em auto 2em auto;
+  background-image: url(/images/canoe.jpg);
+  background-color: hsla(40,10%,30%,0.9);
+  background-blend-mode: color-burn;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-item h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.2em 0.2em 0.3em;
+}
+
+.p-wrap {
+  border: 1px solid white;
+  font-weight: 300;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.menu-item p {
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/**** Form Styles ****/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.form input,
+.form textarea {
+  align-self: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  width: 20em;
+}
+
+.form textarea {
+  height: 8em;
+}
+
+.form .button {
+  color: inherit;
+  background-color: hsla(0,100%,100%,0);
+  border-radius: 3px;
+  font-weight: 400;
+  border: 1px solid #fff;
+  width: auto;
+}
+
+.button:active {
+  background-color: hsla(0,100%,100%,0.3);
+  border-color: transparent;
+  box-shadow: inset 1 5px 5px -5px hsla(190,10%,10%,1);
+}
+
+/**** Footer Styles ****/
+
+#sub-footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #000;
+  background-color: hsl(40,10%,10%);
+  background-position: top;
+  color: #fff;
+}
+
+/**** Media Queries ****/
+
+@media screen and (max-width: 640px) {
+
+  h1 {
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    padding: 0 0 0 0.3em;
+  }
+  
+  h4 {
+    font-size: 1em;
+    margin-top: 0.3em;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    padding: 0 0 0 0.1em;
+  }
+  
+  h4 {
+    font-size: 1em;
+    margin-top: 0.3em;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 13em;
+    align-self: flex-start;
+    padding: 2px;
+  }
+}
+
+/* IE fixes for display issues */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  
+  #issue-desc {
+    background-image: url(../images/kingsdark.jpeg);
+  }
+
+  .menu-item {
+    background-image: url(../images/canoedark.jpg);
+  }
+  
+  .form .button {
+    background-color: hsl(0,100%,100%);
+    color: black;
+    width: 100px;
+  }
+  
+  .button:active {
+  background-color: hsl(0,0%,90%);
+  border-color: transparent;
+}
+}
