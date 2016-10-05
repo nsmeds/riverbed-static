@@ -198,6 +198,16 @@ nav ul li {
   overflow: hidden;
 }
 
+#chevron {
+  display: none;
+  position: fixed;
+  right: 50%;
+  bottom: -5px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+
 /**** Menu-Item Styles ****/
 
 .menu-item {

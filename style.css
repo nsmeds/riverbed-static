@@ -152,7 +152,7 @@ nav ul li {
   padding-bottom: 3em;
 }
 
-#up-button {
+#chevron {
   display: none;
   position: fixed;
   right: 50%;
